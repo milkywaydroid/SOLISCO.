@@ -1,0 +1,341 @@
+MGA DAPAT ALALAHANIN WAG SUMOKO
+
+<!-- Why Choose Us -->
+<section class="why-us reveal">
+  <div class="why-header">
+    <span class="eyebrow">Why SolisCo</span>
+    <h2>Why Choose Us</h2>
+    <p class="subtitle">Crafted with care, delivered with speed.</p>
+  </div>
+
+  <div class="why-grid">
+    <div class="why-card reveal delay-1">
+      <div class="why-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.8 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8L12 2z"/>
+        </svg>
+      </div>
+      <h3>Premium Quality</h3>
+      <p>Carefully curated products made from the finest materials.</p>
+    </div>
+
+    <div class="why-card featured reveal delay-2">
+      <div class="why-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 19l7-7a5 5 0 0 0-7-7 5 5 0 0 0-7 7l7 7z"/>
+          <path d="M9 9l6 6M15 9l-6 6"/>
+        </svg>
+      </div>
+      <h3>Custom Design</h3>
+      <p>Personalize your merchandise with custom designs and colors.</p>
+    </div>
+
+    <div class="why-card reveal delay-3">
+      <div class="why-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 12l2 2 4-4"/>
+          <circle cx="12" cy="12" r="9"/>
+        </svg>
+      </div>
+      <h3>Attention to Detail</h3>
+      <p>Every project undergoes a rigorous quality check to ensure it meets our highest standards.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+.why-us {
+  position: relative;
+  padding: 100px 24px;
+  background:
+    radial-gradient(900px 400px at 15% 0%, rgba(167,139,250,.18), transparent 60%),
+    radial-gradient(700px 380px at 90% 100%, rgba(196,181,253,.22), transparent 60%),
+    linear-gradient(180deg, #faf8ff 0%, #f3eeff 100%);
+  overflow: hidden;
+}
+.why-us::before,
+.why-us::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: .55;
+  pointer-events: none;
+}
+.why-us::before { width: 320px; height: 320px; background: #c4b5fd; top: -80px; left: -80px; }
+.why-us::after  { width: 380px; height: 380px; background: #a78bfa; bottom: -120px; right: -120px; }
+
+.why-header { text-align: center; max-width: 720px; margin: 0 auto 64px; position: relative; }
+.why-header .eyebrow {
+  display: inline-block;
+  font-size: .78rem;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: #7c3aed;
+  background: rgba(167,139,250,.12);
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+.why-header h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  color: #1a1033;
+  margin: 0 0 14px;
+  letter-spacing: -.02em;
+}
+.why-header .subtitle { color: #6b6485; font-size: 1.05rem; margin: 0; }
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.why-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid rgba(167,139,250,.18);
+  border-radius: 22px;
+  padding: 44px 32px 36px;
+  text-align: center;
+  box-shadow: 0 6px 24px rgba(76, 29, 149, .06);
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+  overflow: hidden;
+}
+.why-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(167,139,250,.0), rgba(167,139,250,.08));
+  opacity: 0;
+  transition: opacity .35s ease;
+  pointer-events: none;
+}
+.why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 48px rgba(124, 58, 237, .18);
+  border-color: rgba(167,139,250,.45);
+}
+.why-card:hover::before { opacity: 1; }
+
+.why-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 22px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #ede9fe, #ddd6fe);
+  color: #7c3aed;
+  box-shadow: inset 0 0 0 1px rgba(167,139,250,.3), 0 8px 18px rgba(167,139,250,.25);
+  transition: transform .4s ease;
+}
+.why-icon svg { width: 32px; height: 32px; }
+.why-card:hover .why-icon { transform: rotate(-6deg) scale(1.05); }
+
+.why-card.featured {
+  background: linear-gradient(160deg, #a78bfa 0%, #8b5cf6 100%);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 18px 40px rgba(124,58,237,.32);
+}
+.why-card.featured .why-icon {
+  background: rgba(255,255,255,.18);
+  color: #fff;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.35);
+}
+.why-card.featured h3 { color: #fff; }
+.why-card.featured p { color: rgba(255,255,255,.9); }
+
+.why-card h3 {
+  font-size: 1.3rem;
+  margin: 0 0 12px;
+  color: #1a1033;
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+.why-card p {
+  color: #6b6485;
+  font-size: .98rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .why-grid { grid-template-columns: 1fr; max-width: 460px; }
+  .why-us { padding: 70px 20px; }
+}
+</style>
+
+
+
+
+
+customer POV prompt
+Design and implement a mobile-friendly e-commerce product interface inspired by TikTok Shop UI/UX, focusing on smooth, real-time variant selection (color and size).
+
+Core Features:
+Product Display (Overlay / Modal Style)
+Show product in a popup/modal view similar to TikTok Shop.
+Include:
+Product image
+Price (with discount if applicable)
+Selected variant summary (e.g., “#1009 Violet”)
+Display thumbnail previews for different colors.
+Color Selection (Primary Selector)
+Display colors as selectable thumbnails or cards.
+When a user selects a color:
+It becomes highlighted (active state).
+The system updates the selected variant label (e.g., “#1009 Violet”).
+
+Dynamic Size Behavior (Key Requirement)
+
+Sizes must depend on the selected color.
+When a color is selected:
+The system checks inventory for that specific color.
+Sizes that are out of stock for that color must:
+Be disabled (unclickable)
+Visually appear faded or greyed out
+Not respond to user clicks
+Only available sizes remain clickable
+
+✅ This must behave exactly like TikTok Shop:
+
+Users can SEE all sizes
+But cannot SELECT unavailable ones
+Size Selection
+Sizes (XS, S, M, L, XL, XXL) displayed in buttons.
+States:
+Default (available)
+Selected
+Disabled (out of stock for chosen color)
+Add to Cart / Order Button
+Button is enabled ONLY when:
+A color is selected
+A valid (in-stock) size is selected
+If not:
+Button remains disabled OR shows message like:
+“Please select available size”
+Real-Time Inventory Sync
+
+Inventory structure should support:
+
+Product
+  └── Color
+        └── Sizes (with stock count)
+UI must update instantly when:
+Color changes
+Inventory changes
+User Flow (Important Logic)
+User selects color →
+System filters valid sizes →
+Disabled sizes appear →
+User selects valid size →
+Button activates →
+Visual Behavior
+Disabled sizes:
+Greyed out
+No hover/click effect
+Selected options:
+Highlighted border (like TikTok Shop red outline)
+
+
+
+ADMIN POV
+
+Update the admin inventory system (inventory.php) to fully support color-dependent size stock management, ensuring compatibility with the customer-side variant selection system.
+
+✅ Required Changes:
+1. Database Logic Fix
+Ensure that sizes are linked to each color, not just the item.
+Modify logic so that:
+Each color_id has its own set of sizes
+Each size has its own quantity
+
+✔ Correct structure:
+
+inventory_color_stock (id, item_id, color_name)
+inventory_size_variants (id, color_id, size_name, quantity)
+2. Fix “Add Item” Logic (CRITICAL BUG)
+Currently, sizes are only inserted for the first color.
+Update logic to:
+Loop through ALL selected colors
+Insert size variants for EACH color
+
+✔ Expected behavior:
+
+For each color:
+    For each selected size:
+        Insert size with quantity
+3. Admin UI – Size Management MUST Be Per Color
+
+Replace current global “Size Stock Modal” with:
+
+✅ New behavior:
+
+When admin clicks "Sizes":
+→ They must first choose a COLOR
+→ Then edit sizes under that color
+
+✔ Example UI flow:
+
+[Select Color: Black ▼]
+
+XS - 10
+S  - 5
+M  - 0 (Out of stock)
+L  - 8
+4. Enforce Stock Rules
+If size quantity = 0:
+Mark as Out of Stock
+Prevent negative values
+Optional: auto-highlight low stock
+5. Sync Logic (IMPORTANT)
+
+When admin updates:
+
+Size stock → update color total
+Color total → update item total
+
+✔ Flow:
+
+Size change → update color stock
+Color change → update item quantity
+6. Improve Color Stock Modal
+
+Enhance existing “Color Stock” modal:
+
+Show:
+Total per color
+Number of available sizes
+Optional:
+“Auto distribute sizes” button
+7. Real-Time UX Feedback (Admin Side)
+
+Add:
+
+Disabled input if invalid
+Visual indicator:
+0 stock → grey
+Low stock → warning color
+8. Validation Rules
+
+Before saving:
+
+Ensure:
+At least 1 size per color (if has_sizes = true)
+No orphan sizes (size without color)
+No mismatch between totals
+9. Optional (HIGHLY RECOMMENDED)
+
+Add:
+
+Bulk edit:
+“Apply size quantities to all colors”
+Copy sizes from one color to another
+

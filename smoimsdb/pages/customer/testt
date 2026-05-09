@@ -1,0 +1,48 @@
+heres my file structure
+SMOIMSDB/
+├── css/
+│   └── style.css
+├── images/
+├── includes/
+│   ├── config.php
+│   └── sidebar.php
+├── pages/
+│   ├── ajax/
+│   │   ├── download_order_design.php
+│   │   └── get_order_items.php
+│   ├── customer/
+│   │   ├── cart.php
+│   │   ├── home.php
+│   │   ├── ordering_item.php
+│   │   ├── orders.php
+│   │   ├── product_profile.php
+│   │   ├── product_reviews.php
+│   │   ├── profile.php
+│   │   └── testt
+│   ├── cashflow.php
+│   ├── dashboard.php
+│   ├── img_debug.php
+│   ├── inventory.php
+│   ├── orders.php
+│   ├── receipt.php
+│   ├── records.php
+│   ├── reports.php
+│   ├── reviews.php
+│   └── upload_product_images.php
+├── uploads/
+├── forgot_password.php
+├── login.php
+├── logout.php
+├── mainhomepage.php
+├── notes_namga_kulang
+├── product_profile.php
+├── register.php
+└── smoims_db.sql
+
+
+MAGANDANG upload_product_images
+      --grad-primary: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #ec4899 100%);
+
+
+MAGANDANG UI SA ADMIN POV
+    --grad:linear-gradient(135deg,#a78bfa 0%,#f0abfc 50%,#818cf8 100%);
